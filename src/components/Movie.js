@@ -18,9 +18,12 @@ const Poster = styled.div`
   background-position: center center;
 `;
 
-function Movie({ id, bg }) {
+const ButtonContainer = styled.button``;
+
+function Movie({ id, bg, isLiked }) {
   return (
     <Container>
+      <ButtonContainer>{isLiked ? "Unlike" : "Like"}</ButtonContainer>
       <Link to={`/${id}`}>
         <Poster bg={bg} />
       </Link>
