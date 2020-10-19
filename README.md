@@ -1,3 +1,5 @@
+이전에 만든 yts graphql api가 필요함(movieql로 저장됨)
+
 # styled-componenets, react-router-dom, react-apollo
 
 https://www.apollographql.com/docs/react/get-started/
@@ -6,3 +8,5 @@ https://www.apollographql.com/docs/react/get-started/
 # settig and reset CSS적용
 
 https://cssreset.com/scripts/eric-meyer-reset-css/
+
+#1.1까지함

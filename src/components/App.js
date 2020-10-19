@@ -6,8 +6,8 @@ import Detail from "../routes/Detail";
 function App() {
   return (
     <Router>
-      <Route exact path="/" component={Home}></Route>
-      <Route path="/:id" component={Detail}></Route>
+      <Route exact path="/" component={Home} />
+      <Route path="/:id" component={Detail} />
     </Router>
   );
 }
