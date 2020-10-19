@@ -49,7 +49,7 @@ const Loading = styled.div`
 
 const Movies = styled.div`
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 25px;
   width: 60%;
   position: relative;
@@ -73,11 +73,11 @@ export default () => {
           <Subtitle>I love GraphQL</Subtitle>
         </Header>
 
-        {movies.map((m, i) => (
-          <Movies>
+        <Movies>
+          {movies.map((m, i) => (
             <Movie key={m.id} id={m.id} bg={m.medium_cover_image} />
-          </Movies>
-        ))}
+          ))}
+        </Movies>
       </Container>
     );
   }

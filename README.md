@@ -8,5 +8,3 @@ https://www.apollographql.com/docs/react/get-started/
 # settig and reset CSS적용
 
 https://cssreset.com/scripts/eric-meyer-reset-css/
-
-#1.1까지함
