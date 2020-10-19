@@ -47,6 +47,14 @@ const Loading = styled.div`
   margin-top: 10px;
 `;
 
+const Movies = styled.div`
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 25px;
+  width: 60%;
+  position: relative;
+  top: -50px;
+`;
 export default () => {
   // GET_MOVIES의 쿼리를 가져와서 사용하는데 loading여부 , error여부 , data의 확인을 props 받아올수있음
   const { loading, error, data } = useQuery(GET_MOVIES);
@@ -66,9 +74,9 @@ export default () => {
         </Header>
 
         {movies.map((m, i) => (
-          <>
-            <Movie key={m.id} id={m.id} />
-          </>
+          <Movies>
+            <Movie key={m.id} id={m.id} bg={m.medium_cover_image} />
+          </Movies>
         ))}
       </Container>
     );
