@@ -1,7 +1,10 @@
 import React from "react";
-import { useQuery, gql } from "@apollo/client";
+import { useQuery, gql, makeVar } from "@apollo/client";
 import styled from "styled-components";
 import Movie from "../components/Movie";
+
+const cartItems = makeVar(["noh"]);
+console.log("cartItems", cartItems());
 
 const GET_MOVIES = gql`
   {
@@ -67,6 +70,7 @@ export default () => {
     return <Loading>Loading...</Loading>;
   } else {
     const { movies } = data;
+
     return (
       <Container>
         <Header>
