@@ -1,10 +1,16 @@
-이전에 만든 yts graphql api가 필요함(movieql로 저장됨)
+# GraphQL Movie API Frontend
 
-# styled-componenets, react-router-dom, react-apollo
+> reset CSS적용 이유와 적용방법중 하나를 학습
 
-https://www.apollographql.com/docs/react/get-started/
-여기서 하라는대로 함
+    https://cssreset.com/scripts/eric-meyer-reset-css/
 
-# settig and reset CSS적용
+> yts API를 사용한 backend로부터 @apollo/clien와 graphql을 사용하여 데이터를 받아오는 방법 학습<br/>
+> styled-component 사용방법 학습<br/>
+> react-router-dom" 사용방법 학습<br/>
+> graphql을 사용하여 클라이언트쪽 global state 관리 방법 학습<br/>
+> GraphQL-Movie-APi-Backend랑 연결<br/>
 
-https://cssreset.com/scripts/eric-meyer-reset-css/
+### 구현 동작
+
+![1-main-page](./README_IMAGE/1-main-page.png)
+![2-description_page](./README_IMAGE/2-description_page.png)
